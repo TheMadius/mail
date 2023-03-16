@@ -16,15 +16,18 @@ LIBS += -L"../lab_1_mail/lib" -lhv
 SOURCES += \
     dialogauthorization.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    sendmail.cpp
 
 HEADERS += \
     dialogauthorization.h \
-    mainwindow.h
+    mainwindow.h \
+    sendmail.h
 
 FORMS += \
     dialogauthorization.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    sendmail.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

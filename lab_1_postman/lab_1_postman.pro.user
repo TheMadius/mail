@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2023-03-02T22:27:31. -->
+<!-- Written by QtCreator 6.0.2, 2023-03-16T19:57:27. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -236,9 +236,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/madius/lab_1_postman/lab_1_postman.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/madius/lab_1_postman/lab_1_postman.pro</value>
-    <value type="QString" key="RunConfiguration.Arguments">127.0.0.1 9999 Postman</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">lab_1_postman2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/madius/lab_VS/lab_1_postman/lab_1_postman.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/madius/lab_VS/lab_1_postman/lab_1_postman.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>

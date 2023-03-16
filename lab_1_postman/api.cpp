@@ -15,8 +15,8 @@ void api::init_mail(std::string dir) {
         << "*",
         QDir::Files | QDir::NoDotAndDotDot);
     for(auto file : dirContent) {
-        qDebug() << "Найден файл " + file.filePath();
         list_user.insert(file.fileName(), std::make_shared<ListInFile>(file.filePath().toStdString()));
+        qDebug() << "Найден файл " + file.filePath() + " Количесво сообщений " + QString::number(list_user[file.fileName()]->getCount());
     }
 }
 
@@ -79,9 +79,7 @@ void api::start(std::string dir) {
         {
             qDebug() << "Запрос GET /readMessage";
             try {
-                json j_req = json::parse(ctx->body());
-                std::string uuid = j_req["uuid"];
-                std::string msg = j_req["msg"];
+                std::string uuid = ctx->param("uuid");
 
                 if (uuid_user.contains(uuid.c_str())) {
                     auto login = uuid_user[uuid.c_str()];

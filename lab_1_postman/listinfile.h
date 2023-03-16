@@ -19,7 +19,7 @@ public:
     QString getMsg();
 
 private:
-    QByteArray getDataInFile(QString file_name);
+    QByteArray getDataInFile(QString file_name );
     void createFile(std::string name);
     QString file_name;
     QFile* file;

@@ -1,9 +1,11 @@
 #include "listinfile.h"
+#include <QtDebug>
 
 ListInFile::ListInFile(std::string name)
 {
     file_name = name.c_str();
     file = new QFile(name.c_str());
+    file->open(QIODevice::ReadOnly);
     if(!file->isOpen()) {
         createFile(name);
     } else {
@@ -39,12 +41,13 @@ QString ListInFile::getMsg() {
     QDataStream stream(&data, QIODevice::ReadOnly);
 
     QList<QString> msgList;
-    stream >> msgList;
+    stream >> msgList;   
     QString msg;
 
     if (msgList.size() == 0) {
         return "";
     }
+
     msg = msgList.first();
     msgList.pop_back();
 
@@ -55,6 +58,8 @@ QString ListInFile::getMsg() {
     file->open(QIODevice::WriteOnly);
     file->write(saveData);
     file->close();
+
+    return msg;
 }
 
 int ListInFile::getCount() {

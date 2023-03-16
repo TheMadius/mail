@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     if(argc != 4) {
-        qDebug() << "Не указаны параметры запуска";
+        qDebug() << "Не указаны параметры запуска <ip <port> <name postman>";
         exit(1);
     }
 

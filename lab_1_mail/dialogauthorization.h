@@ -18,6 +18,7 @@ public:
     ~DialogAuthorization();
     QString uuid;
     QString host;
+    QString name;
 private slots:
     void on_pushButton_clicked();
 

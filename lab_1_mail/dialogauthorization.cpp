@@ -37,6 +37,7 @@ void DialogAuthorization::on_pushButton_clicked()
                         json j_resp = json::parse(resp_user->Body());
                         std::string uuid = j_resp["uuid"];
                         this->uuid = uuid.c_str();
+                        this->name = login;
                         this->accept();
                     } else {
                         QMessageBox::critical(this, QObject::tr("Ошибка"), QObject::tr("Ошибка авторизации!!!"));

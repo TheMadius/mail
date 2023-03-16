@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QTimer>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -21,9 +22,15 @@ public:
 public slots:
     void checkNewMsg();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     QString host;
     QString user_uuid;
+    QString login;
     Ui::MainWindow *ui;
     QLabel *lable;
     QTimer *timer;
